@@ -1,18 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-// import './styles/style.css';
+import nav from './nav';
+import { top, bottom } from './footer';
+import makeButton from './button';
+import { makeColorStyle } from './button-styles';
 
-const App = () => {
-  return (
-    <div>
-      <h1>Hello World what</h1>
-    </div>
-  );
-};
-
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+console.log(
+  nav(),
+  top,
+  bottom,
+  makeButton('my first button'),
+  makeColorStyle('yellow')
 );
