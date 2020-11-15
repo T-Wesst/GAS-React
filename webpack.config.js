@@ -7,6 +7,9 @@ module.exports = ({ mode, presets } = { mode: 'production', presets: [] }) => {
   return merge(
     {
       mode,
+      module: {
+        rules: [{ test: /\.jp?g$/, use: ['url-loader'] }],
+      },
       output: { filename: 'bundle.js' },
       plugins: [new HtmlWebpackPlugin(), new webpack.ProgressPlugin()],
     },
