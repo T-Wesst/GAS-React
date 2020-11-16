@@ -6,7 +6,6 @@ import makeImage from './image';
 import css from './footer.css';
 import buttonStyle from './button.css';
 import imageURL from './webpack-logo.jpg';
-import Test from './test.ts';
 
 const button = makeButton('yay a button');
 const image = makeImage(imageURL);
