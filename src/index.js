@@ -9,6 +9,7 @@ import imageURL from './webpack-logo.jpg';
 // import { footer } from './footer';
 const loadFooter = () => import('./footer');
 const getGSAP = () => import('gsap');
+const getLodashUniq = () => import('lodash-es/uniq');
 
 const button = makeButton('yay a button');
 const image = makeImage(imageURL);
@@ -16,6 +17,10 @@ const image = makeImage(imageURL);
 button.addEventListener('click', (e) => {
   loadFooter().then((module) => {
     document.body.appendChild(module.footer);
+  });
+
+  getLodashUniq().then((uniq) => {
+    console.log(uniq);
   });
 
   getGSAP().then((gsap) => {

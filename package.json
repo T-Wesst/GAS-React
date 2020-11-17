@@ -20,7 +20,8 @@
   "license": "ISC",
   "dependencies": {
     "@types/google-apps-script": "^1.0.17",
-    "gsap": "^3.5.1"
+    "gsap": "^3.5.1",
+    "lodash-es": "^4.17.15"
   },
   "devDependencies": {
     "compression-webpack-plugin": "^6.1.1",
