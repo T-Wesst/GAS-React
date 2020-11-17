@@ -19,7 +19,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/google-apps-script": "^1.0.17"
+    "@types/google-apps-script": "^1.0.17",
+    "gsap": "^3.5.1"
   },
   "devDependencies": {
     "compression-webpack-plugin": "^6.1.1",
