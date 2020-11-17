@@ -10,6 +10,7 @@ import imageURL from './webpack-logo.jpg';
 const loadFooter = () => import('./footer');
 const getGSAP = () => import('gsap');
 const getLodashUniq = () => import('lodash-es/uniq');
+const setButtonStyle = (color) => import(`./button-styles/${color}`);
 
 const button = makeButton('yay a button');
 const image = makeImage(imageURL);
@@ -25,6 +26,11 @@ button.addEventListener('click', (e) => {
 
   getGSAP().then((gsap) => {
     console.log('gsap: ', gsap);
+  });
+
+  setButtonStyle('red').then((styleStr) => {
+    console.log(styleStr);
+    button.style = styleStr.default;
   });
 });
 
