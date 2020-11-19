@@ -7,7 +7,7 @@ const presetConfig = require('./build-utils/loadPresets');
 module.exports = ({ mode, presets } = { mode: 'production', presets: [] }) => {
   return merge(
     {
-      mode,
+      mode: 'none',
       module: {
         rules: [
           {
