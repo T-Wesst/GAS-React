@@ -7,7 +7,7 @@ import buttonStyle from './button.css';
 import imageURL from './webpack-logo.jpg';
 // import gsap from 'gsap';
 // import { footer } from './footer';
-const loadFooter = () => import('./footer');
+const loadFooter = () => import(/* webpackChunkName: "footer" */ './footer');
 const getGSAP = () => import('gsap');
 const getLodashUniq = () => import('lodash-es/uniq');
 const setButtonStyle = (color) => import(`./button-styles/${color}`);
