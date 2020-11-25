@@ -1,10 +1,8 @@
-const path = require('path');
-
-module.exports = {
+module.exports = (env) => ({
   devtool: 'source-map',
   module: {
     rules: [],
   },
 
   plugins: [],
-};
+});
