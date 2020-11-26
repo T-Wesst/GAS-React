@@ -14,7 +14,7 @@ module.exports = ({ mode, presets } = { mode: 'production', presets: [] }) => {
   return merge(
     {
       mode,
-      entry: path.resolve(__dirname, './src/index.js'),
+      entry: path.resolve(__dirname, './src/index.ts'),
       module: {
         rules: [],
       },

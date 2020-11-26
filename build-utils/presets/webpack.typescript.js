@@ -1,8 +1,13 @@
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+
 module.exports = () => ({
   module: {
-    rules: [{ test: /\.ts$/, use: 'ts-loader', exclude: 'node_modules' }],
+    rules: [
+      { test: /\.ts|jsx?$/, use: 'babel-loader', exclude: 'node_modules' },
+    ],
   },
+  plugins: [new ForkTsCheckerWebpackPlugin()],
   resolve: {
-    extensions: ['.ts', '.js'],
+    extensions: ['.ts', '.js', '.json', '.tsx'],
   },
 });

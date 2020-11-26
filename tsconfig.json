@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+  "target": "ESNext",
+  "lib": ["ESNext"],
+  "experimentalDecorators": true,
+  "noEmit": true,
+  "allowJs": true,
+  "outDir": "./dist",
+  "declaration": true,
+  "declarationDir": "dist/types",
+  "allowSyntheticDefaultImports": true,
+  "noFallthroughCasesInSwitch": true,
+  "noUnusedParameters": true,
+  "noImplicitReturns": true,
+  "esModuleInterop": true,
+  "noUnusedLocals": true,
+  "noImplicitAny": true,
+  "module": "CommonJS",
+  "strict": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
+
+// typescript as type checker
+// babel as transpiler
