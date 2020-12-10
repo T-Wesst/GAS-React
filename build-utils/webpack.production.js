@@ -1,8 +1,8 @@
 module.exports = (env) => ({
   devtool: 'source-map',
-  module: {
-    rules: [],
-  },
+  // module: {
+  //   rules: [],
+  // },
 
-  plugins: [],
+  // plugins: [],
 });

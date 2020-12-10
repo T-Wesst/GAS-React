@@ -21,6 +21,3 @@
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
 }
-
-// typescript as type checker
-// babel as transpiler

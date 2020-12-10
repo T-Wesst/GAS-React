@@ -14,7 +14,7 @@ module.exports = ({ mode, presets } = { mode: 'production', presets: [] }) => {
   return merge(
     {
       mode,
-      entry: path.resolve(__dirname, './src/index.ts'),
+      entry: './src/index.ts',
       module: {
         rules: [],
       },
@@ -30,7 +30,7 @@ module.exports = ({ mode, presets } = { mode: 'production', presets: [] }) => {
         }),
         new CleanWebpackPlugin(),
         new webpack.ProgressPlugin(),
-        new appsScriptPlugin(),
+        // new appsScriptPlugin(),
         new CopyPlugin({
           patterns: [{ from: 'appsscript.json', to: destination }],
         }),
