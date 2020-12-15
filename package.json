@@ -7,10 +7,9 @@
     "webpack": "webpack",
     "webpack:server": "webpack-dev-server",
     "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
-    "dev:typescript": "npm run webpack:server -- --env.mode development --env.presets typescript",
+    "dev": "npm run webpack:server -- --env.mode development --env.presets typescript",
     "dev:debug": "npm run debug -- --env.mode development",
-    "prod": "npm run webpack -- --env.mode production",
-    "prod:typescript": "npm run prod -- --env.presets typescript"
+    "prod": "npm run webpack -- --env.mode production --env.presets typescript"
   },
   "keywords": [],
   "author": "",
